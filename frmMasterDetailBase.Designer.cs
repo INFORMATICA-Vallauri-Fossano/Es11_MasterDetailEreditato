@@ -137,6 +137,7 @@
             this.Controls.Add(this.dgvMaster);
             this.Name = "frmMasterDetailBase";
             this.Text = "frmMasterDetailBase";
+            this.Load += new System.EventHandler(this.frmMasterDetailBase_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaster)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

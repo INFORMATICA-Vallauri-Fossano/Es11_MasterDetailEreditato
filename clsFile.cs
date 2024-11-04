@@ -12,59 +12,61 @@ namespace Es01AnrangoRamos
     {
         private string nomeFile = "";
         private int numeroRighe = 0;
-        /*
-        private string path;
-
-        public clsFile(string pt) {
-
-            if (!checkPath(pt)) throw new Exception("Path non valido");
-            else
-            if(!File.Exists(pt))
+        //
+        public string NomeFile
+        {
+            get => nomeFile;
+            set
             {
-                using (FileStream fs = File.Create(pt)) { };
+                //esentuali controlli che il file estista
+                nomeFile = value;
             }
-                path = pt;
         }
 
-        //il mio check controlla solo path relativi al progetto
-        private bool checkPath(string s)
+        public int NumeroRighe
         {
-            bool esito = true;
-            if (s.Length <= 260&&s.Length>2)
+            get => numeroRighe; set
             {
-                
-                int i = 0;
-                bool AllowedCharacter;
-                while ((AllowedCharacter=s[i] != '/' && s[i] != ':' && s[i] != '*' && s[i] != '?' && s[i] != '"' && s[i] != '<' && s[i] != '>' && s[i] != '|') && i < s.Length-1)
-                    i++;
+                //esentuali controlli che il file estista
 
-
-                if (!AllowedCharacter) esito = false;
-                else if (s[s.Length - 4] != '.' || s[s.Length - 3] != 't' || s[s.Length - 2] != 'x' || s[s.Length - 1] != 't') esito = false;
-
-            }else esito =false;
-
-            return esito;
+                numeroRighe = value;
+            }
         }
-        public string[] GetLinesFile()
+
+        public clsFile()
         {
-            string[] fildata=File.ReadAllLines(path);
 
-            return fildata;
+        }
+        //metodi
+        public List<string> ListaRighe()
+        {
+            List<string> lstRighe = new List<string>();
+            if (nomeFile != "")
+            {
+                NumeroRighe = 0;
+                StreamReader sr = new StreamReader(NomeFile);
+                while(sr.Peek()!=-1)
+                {
+                    lstRighe.Add(sr.ReadLine());
+                    numeroRighe++;
+                }
+                sr.Close();
+            }
+            return lstRighe;
         }
 
-        public void UpdateFile(string[] newFileData)
+        public void salvaModifiche(List<string> l)
         {
-            File.WriteAllLines(path, newFileData);
+            StreamWriter sw = new StreamWriter(NomeFile);
+            foreach(string s in l)
+                sw.WriteLine(s);
+            sw.Close();
         }
-        public void CreateLinesFile(string[] newFileData)
+        public void aggiungi(string nuovo)
         {
-            File.AppendAllLines(path, newFileData);
+            StreamWriter sw = new StreamWriter(NomeFile,true);
+                sw.WriteLine(nuovo);
+            sw.Close();
         }
-        public void CreateLinesFile(string newFileData)
-        {
-            File.AppendAllText(path, newFileData+"\n");
-        }
-*/
     }
 }

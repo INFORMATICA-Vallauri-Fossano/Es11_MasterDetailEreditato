@@ -1,0 +1,5 @@
+Id;Classe;Specializzazione
+3;3CI;Informatica
+5;4CP;Professionale
+7;5BL;Liceo
+8;2CI;Informatica
