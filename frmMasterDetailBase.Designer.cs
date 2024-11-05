@@ -49,6 +49,7 @@
             this.dgvMaster.Name = "dgvMaster";
             this.dgvMaster.Size = new System.Drawing.Size(776, 302);
             this.dgvMaster.TabIndex = 0;
+            this.dgvMaster.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMaster_CellClick);
             // 
             // lbl1
             // 
@@ -110,6 +111,7 @@
             this.btnSalva.TabIndex = 7;
             this.btnSalva.Text = "SALVA";
             this.btnSalva.UseVisualStyleBackColor = true;
+            this.btnSalva.Click += new System.EventHandler(this.btnSalva_Click);
             // 
             // btnNuovo
             // 
@@ -120,6 +122,7 @@
             this.btnNuovo.TabIndex = 8;
             this.btnNuovo.Text = "NUOVO";
             this.btnNuovo.UseVisualStyleBackColor = true;
+            this.btnNuovo.Click += new System.EventHandler(this.btnNuovo_Click);
             // 
             // frmMasterDetailBase
             // 

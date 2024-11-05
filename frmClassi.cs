@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Es11_MasterDetailEreditato
 {
-    public partial class frmBase : Form
+    public partial class frmClassi : frmMasterDetailBase
     {
-        public frmBase()
+        public frmClassi()
         {
             InitializeComponent();
-        }
-
-        private void btnAnagrafica_Click(object sender, EventArgs e)
-        {
-            frmMasterDetailBase f=new frmMasterDetailBase();
-            f.ShowDialog();
         }
     }
 }

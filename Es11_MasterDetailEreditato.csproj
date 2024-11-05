@@ -47,11 +47,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsFile.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="frmAnagrafica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmAnagrafica.Designer.cs">
+      <DependentUpon>frmAnagrafica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassi.Designer.cs">
+      <DependentUpon>frmClassi.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMasterDetailBase.cs">
       <SubType>Form</SubType>
@@ -59,10 +71,19 @@
     <Compile Include="frmMasterDetailBase.Designer.cs">
       <DependentUpon>frmMasterDetailBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVoti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVoti.Designer.cs">
+      <DependentUpon>frmVoti.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmAnagrafica.resx">
+      <DependentUpon>frmAnagrafica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMasterDetailBase.resx">
       <DependentUpon>frmMasterDetailBase.cs</DependentUpon>

@@ -18,8 +18,7 @@ namespace Es01AnrangoRamos
             get => nomeFile;
             set
             {
-                //esentuali controlli che il file estista
-                nomeFile = value;
+                    nomeFile = value;
             }
         }
 
@@ -28,7 +27,6 @@ namespace Es01AnrangoRamos
             get => numeroRighe; set
             {
                 //esentuali controlli che il file estista
-
                 numeroRighe = value;
             }
         }
@@ -41,14 +39,14 @@ namespace Es01AnrangoRamos
         public List<string> ListaRighe()
         {
             List<string> lstRighe = new List<string>();
-            if (nomeFile != "")
+            if (NomeFile != "")
             {
                 NumeroRighe = 0;
                 StreamReader sr = new StreamReader(NomeFile);
                 while(sr.Peek()!=-1)
                 {
                     lstRighe.Add(sr.ReadLine());
-                    numeroRighe++;
+                    NumeroRighe++;
                 }
                 sr.Close();
             }

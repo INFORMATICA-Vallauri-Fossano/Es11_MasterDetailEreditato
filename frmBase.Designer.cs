@@ -38,7 +38,7 @@
             this.btnAnagrafica.Name = "btnAnagrafica";
             this.btnAnagrafica.Size = new System.Drawing.Size(95, 27);
             this.btnAnagrafica.TabIndex = 0;
-            this.btnAnagrafica.Text = "Anagrafica";
+            this.btnAnagrafica.Text = "anagrafica";
             this.btnAnagrafica.UseVisualStyleBackColor = true;
             this.btnAnagrafica.Click += new System.EventHandler(this.btnAnagrafica_Click);
             // 
@@ -48,8 +48,9 @@
             this.btnClassi.Name = "btnClassi";
             this.btnClassi.Size = new System.Drawing.Size(95, 27);
             this.btnClassi.TabIndex = 1;
-            this.btnClassi.Text = "Classi";
+            this.btnClassi.Text = "classi";
             this.btnClassi.UseVisualStyleBackColor = true;
+            this.btnClassi.Click += new System.EventHandler(this.btnClassi_Click);
             // 
             // frmBase
             // 
