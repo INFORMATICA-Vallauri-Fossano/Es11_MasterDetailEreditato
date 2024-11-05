@@ -88,6 +88,9 @@
     <EmbeddedResource Include="frmMasterDetailBase.resx">
       <DependentUpon>frmMasterDetailBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVoti.resx">
+      <DependentUpon>frmVoti.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
