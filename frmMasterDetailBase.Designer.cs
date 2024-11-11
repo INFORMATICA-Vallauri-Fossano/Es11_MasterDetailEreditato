@@ -151,12 +151,12 @@
 
         private System.Windows.Forms.DataGridView dgvMaster;
         private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.TextBox txt1;
-        private System.Windows.Forms.TextBox txt2;
         private System.Windows.Forms.Label lbl2;
-        private System.Windows.Forms.TextBox txt3;
         private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.Button btnSalva;
         private System.Windows.Forms.Button btnNuovo;
+        protected System.Windows.Forms.TextBox txt1;
+        protected System.Windows.Forms.TextBox txt2;
+        protected System.Windows.Forms.TextBox txt3;
     }
 }

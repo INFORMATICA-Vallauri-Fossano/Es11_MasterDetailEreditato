@@ -20,6 +20,9 @@ namespace Es11_MasterDetailEreditato
         private void btnVediVoti_Click(object sender, EventArgs e)
         {
             frmVoti f=new frmVoti();
+            f.IdAlunno = txt1.Text;
+            f.NomeAlunno = txt2.Text;
+            f.CognomeAlunno = txt3.Text;
             f.ShowDialog();
         }
     }

@@ -18,7 +18,7 @@ namespace Es01AnrangoRamos
             get => nomeFile;
             set
             {
-                    nomeFile = value;
+                nomeFile=Path.Combine(Application.StartupPath, nomeFile + ".txt");
             }
         }
 
